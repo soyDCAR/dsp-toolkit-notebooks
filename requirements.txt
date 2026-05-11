@@ -1,0 +1,5 @@
+numpy
+scipy
+matplotlib
+# tkinter is included with Python on Windows/macOS
+# Linux: sudo apt install python3-tk
