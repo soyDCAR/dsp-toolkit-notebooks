@@ -13,6 +13,7 @@ Each module is a self-contained notebook with a `tkinter` + `matplotlib` GUI —
 | [`discrete_convolution`](discrete_convolution/) | Discrete convolution calculator: direct method vs. sum method, sequences of any length | numpy |
 | [`radiation_patterns`](radiation_patterns/) | Acoustic multipole radiation pattern simulator — monopole, dipole, tripole, quadrupole | numpy, matplotlib |
 | [`acoustic_horns`](acoustic_horns/) | 2D profile + 3D revolution plotter for conic, exponential, catenoidal and hyperbolic horns | numpy, matplotlib |
+| [`filter_explorer`](filter_explorer/) | Magnitude & phase analyzer for Butterworth, Chebyshev I/II, Linkwitz-Riley and All-Pass filters — two-channel comparison with gain, polarity, delay | numpy, scipy, matplotlib |
 
 ## Installation
 
@@ -37,6 +38,7 @@ jupyter lab discrete_convolution/discrete_convolution.ipynb
 - **`forward_difference_wav`** — renamed from *Visualizador de Delta-Dira*. The original name contained both a typo ("Dira" → "Dirac") and a conceptual error: the code computes a forward difference, not a Dirac delta. See [`forward_difference_wav/README.md`](forward_difference_wav/README.md).
 - **`radiation_patterns`** — physical constants (frequency, sound speed, etc.) centralized in a `CONFIG` dict; GUI fields pre-populated from defaults.
 - **`acoustic_horns`** — embedded cell outputs stripped, reducing file size from ~230 KB to ~7 KB.
+- **`filter_explorer`** — consolidated from standalone `audio-fx-analyzer` repo (archived). Encoding fixed (UTF-8/Latin-1 corruption), GUI control loop refactored to eliminate duplicate widget bindings, Linkwitz-Riley correctly applied twice (Butterworth²).
 
 ## Future work
 
